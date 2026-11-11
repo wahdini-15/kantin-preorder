@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panel Penjual</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="bar">
+      <div>
+        <p>Kelola pesanan masuk</p>
+        <h1>Panel Penjual</h1>
+      </div>
+      <a class="tombol-kecil" href="index.html">Halaman pembeli</a>
+    </div>
+  </header>
+
+  <main>
+    <label for="pilih-kios">Pilih kios</label>
+    <select id="pilih-kios"></select>
+
+    <div class="papan">
+      <section class="kolom">
+        <h2>Menunggu</h2>
+        <div id="kolom-menunggu"></div>
+      </section>
+      <section class="kolom">
+        <h2>Dimasak</h2>
+        <div id="kolom-dimasak"></div>
+      </section>
+      <section class="kolom">
+        <h2>Siap Diambil</h2>
+        <div id="kolom-siap"></div>
+      </section>
+    </div>
+  </main>
+
+  <script src="penjual.js"></script>
+</body>
+</html>

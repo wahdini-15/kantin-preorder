@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kantin Pre-Order</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pembeli">
+  <header>
+    <div class="bar">
+      <div>
+        <p>Pesan dulu, ambil tanpa antre</p>
+        <h1>Kantin Pre-Order</h1>
+      </div>
+      <a class="tombol-kecil" href="penjual.html">Panel penjual</a>
+    </div>
+    <div class="kotak-jam">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#c2410c" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="3"/><path d="M8 3v4M16 3v4M3 10h18"/></svg>
+      <div class="teks">
+        <label for="jam-ambil">Jam ambil</label>
+        <input type="time" id="jam-ambil">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div id="tabs" class="tabs"></div>
+    <section id="daftar-menu">Memuat menu...</section>
+
+    <section class="panel" id="keranjang">
+      <h2>Keranjang</h2>
+      <div id="isi-keranjang">Keranjang masih kosong.</div>
+      <p class="total-baris">Total <strong id="total">Rp0</strong></p>
+
+      <h3>Data pemesan</h3>
+      <label for="nama-pemesan">Nama pemesan</label>
+      <input type="text" id="nama-pemesan" placeholder="Nama kamu">
+      <button id="btn-pesan" class="btn">Pesan sekarang</button>
+      <p id="pesan-info" role="status"></p>
+    </section>
+
+    <section class="panel">
+      <h2>Pesanan saya</h2>
+      <div id="riwayat">Belum ada pesanan.</div>
+    </section>
+  </main>
+
+  <div class="bar-bawah" id="bar-bawah" hidden>
+    <a href="#keranjang" class="bar-isi">
+      <span id="bar-info"></span>
+      <span>Lihat keranjang &rarr;</span>
+    </a>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
